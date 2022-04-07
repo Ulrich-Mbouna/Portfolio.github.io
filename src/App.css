@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helveticaneue.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/la-belle-aurore-v14-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+.custom-input {
+  @apply font-helveticaneue
+}
+.nav-link {
+  @apply text-[22px] text-[#4d4d4e] block leading-[50px] h-[51px] relative no-underline
+  hover:text-[#ffd700] after:hover:opacity-100 after:content-[''] after:text-[9px]
+  after:absolute after:bottom-0 after:block after:w-full after:text-center after:opacity-0 after:transition-all after:duration-300 after:ease-out
+  first:after:content-['HOME']
+}
+.nav-link.active svg {
+  color: #ffd700;
+}
+.nav-link > i {
+  @apply transition-all duration-300 ease-out
+}
+.rs-link li a {
+  @apply py-[7px] px-0 block text-[15px] leading-4
+}
+.rs-link li a:hover svg {
+  @apply hover:text-[#ffd700]
+}
+.tags {
+  @apply text-[#ffd700] opacity-60 absolute bottom-0 left-[120px] text-[18px]
+        font-labelleaurore
+}
+.container {
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+.text-zone {
+  transform: translateY(-50%)
+}
+.text-zone h1 {
+  animation: fadeIn 1s 1.7s backwards;
+}
+.text-zone h1 img {
+  width: 32px;
+  margin-left: 20px;
+  height: auto;
+  animation: rotateIn 1s linear both;
+  animation-delay: 1.4s;
+}
+.text-zone{
+  animation: fadeIn 1s 1.8s backwards;
+}

@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ffd700'
+        'yellow_': '#ffd700'
     },
     fontFamily: {
         helveticaneue: ['Helvetica Neue'],

@@ -1,7 +1,8 @@
+@import 'animate.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 body {
   font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
@@ -54,16 +55,6 @@ body {
 }
 .text-zone {
   transform: translateY(-50%)
-}
-.text-zone h1 {
-  animation: fadeIn 1s 1.7s backwards;
-}
-.text-zone h1 img {
-  width: 32px;
-  margin-left: 20px;
-  height: auto;
-  animation: rotateIn 1s linear both;
-  animation-delay: 1.4s;
 }
 .text-zone{
   animation: fadeIn 1s 1.8s backwards;

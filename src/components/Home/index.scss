@@ -1,0 +1,22 @@
+.home-page {
+    h1 {
+        &::after {
+            animation: fadeIn 1s 1.7s linear backwards;
+        }
+    
+        img {
+            width: 32px;
+            opacity:0;
+            margin-left: 20px;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+          }
+    }
+    h2 {
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    .flat-button {
+        animation: fadeIn 1s 1.8s backwards;
+    }
+}

@@ -10,7 +10,8 @@ import '../AnimatedLetters/Index.scss';
 const Home = () => {
 
 const [letterClass, setLetterClass] = useState('text-animate');
-const nameArray = ['l','o','b','o','d','a','n'];
+const nameArray = ['o','n','g','w','a'];
+const firstnameArray = ['M','b','o','u','n', 'a'];
 const jobArray = ['w','e','b',' ', 'd','e', 'v', 'e', 'l','o', 'p', 'e', 'r', '.'];
 
 useEffect(() => {
@@ -32,16 +33,19 @@ return (
                     <span className={`${letterClass} _12`}>i,</span>   
                     <br />
                     <span className={`${letterClass} _13`}>I</span>   
-                    <span className={`${letterClass} _14`}>'m</span>   
-                    <img src={LogoTitle} alt="developper" />
+                    <span className={`${letterClass} _14 mr-4`}>'m</span>
                     <AnimatedLetters letterClass={letterClass}
-                    strArray={nameArray} idx={15} />
+                                     strArray={firstnameArray} idx={15} />
+                    <img src={LogoTitle} alt="developper" />
+
+                    <AnimatedLetters letterClass={letterClass}
+                    strArray={nameArray} idx={22} />
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray} idx={22} />
                 </h1>
-                <h2 className="text-[#8d8d8d] mt-5 font-normal text-[11px] font-sans tracking-[3px]">Frontend Developer / Javascript Expert / Youtuber</h2>
-                <Link to="/contact" className="flat-button text-yellow_ font-normal tracking-[4px] font-sans no-underline py-[10px] px-[18px] border border-solid border-yellow_
+                <h2 className="text-[#8d8d8d] mt-5 font-normal text-[11px] font-sans tracking-[3px]">Frontend Developer</h2>
+                <Link to="/contact" className="text-yellow_ font-normal tracking-[4px] font-sans no-underline py-[10px] px-[18px] border border-solid border-yellow_
                     mt-[25px] float-left whitespace-nowrap
                     hover:text-[#333] hover:bg-yellow_
                 ">CONTACT ME
@@ -49,7 +53,7 @@ return (
             </div>
             <Logo />
         </div>
-        <Loader type="pacman" />
+        <Loader type="pacman" active />
         </>
     )
 };

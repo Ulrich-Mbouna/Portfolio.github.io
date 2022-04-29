@@ -15,7 +15,7 @@ const Sidebar = () => (
         className="block my-2 mx-auto h-auto w-[50px]"
       />
     </Link>
-    <nav className='block text-center absolute h-[210px] top-1/2 mt-[-30rem] w-full'>
+    <nav className='block text-center absolute h-[210px] top-1/2 mt-[-120px] w-full'>
         <NavLink className="nav-link group after:tracking-[2px]" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon className='group-hover:opacity-0' icon={faHome} color="#4d4d4e" />
         </NavLink>

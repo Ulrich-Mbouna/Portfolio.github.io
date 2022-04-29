@@ -1,8 +1,9 @@
 import LogoTitle from '../../assets/images/logo-s.png';
-import Logo from ".././Logo";
+import Logo from "./Logo";
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import {useEffect, useState } from 'react';
+import Loader from 'react-loaders';
 import './Index.scss';
 import '../AnimatedLetters/Index.scss';
 
@@ -19,7 +20,8 @@ useEffect(() => {
 }, [])
 
 return (
-        <div className="container opacity-0 home-page w-full will-change-contents h-[90%] min-h-[566px] absolute top-[5%] my-0 mx-auto
+        <>
+            <div className="container opacity-0 home-page w-full will-change-contents h-[90%] min-h-[566px] absolute top-[5%] my-0 mx-auto
         z-[1] ">
             <div className="text-zone absolute left-[10%] top-1/2 w-[40%] max-h-[90%]
             ">
@@ -47,6 +49,8 @@ return (
             </div>
             <Logo />
         </div>
+        <Loader type="pacman" />
+        </>
     )
 };
 
